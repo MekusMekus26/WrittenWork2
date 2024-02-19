@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+body{
+  background-color: skyblue;
+ 
+  
+  
+  
+}
+button{
+  font-size: 4vw;
+  border:solid dodgerblue ;
+  background-color:deepskyblue;
+  border-radius: 4vw;
+  padding:1vw;
+  color:white;
+  
+}
+h1{
+  border:solid dodgerblue;
+  background-color:deepskyblue;
+  border-radius: 4vw;
+  padding:2vw;
+  
+  color:white;
+  font-size: 6vw;
+}
+section{
+  position: relative;
+overflow: hidden;
+  height: 100vh;
+  width: 100%;
+ 
+}
+
+section .wave{
+  bottom: -200px;
+  position: absolute;
+  left:0;
+  right:0;
+  width:100%;
+ height:100px;
+  background-image: url("wave.png");
+background-repeat: no-repeat;
+bottom: 0;
+background-size:1500px 100%;
+}
+section .wave.wave1{
+  opacity: .5;
+  animation:animate 30s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1500px;
+  } 
+  
+}
+
+section .wave.wave2{
+  opacity:.8;
+  z-index: 999;
+  bottom:-80px;
+  animation:animate2 10s linear infinite;
+}
+@keyframes animate2{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1500px;
+  } 
+  
+}
+section .wave.wave3{
+  animation:animate3 20s linear infinite;
+  animation-delay: -5%;
+  opacity: .4;
+  bottom:-50px;
+}
+@keyframes animate3{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1500px;
+  } 
+  
+}
+section .wave.wave4{
+  animation:animate4 15s linear infinite;
+  animation-delay:-2% ;
+  opacity: .6;
+  bottom: -30px;
+}
+@keyframes animate4{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1500px;
+  } 
+  
+}
+
+img{
+  height:40vh;
+  width:100vw;
+}
